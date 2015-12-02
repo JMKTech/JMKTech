@@ -1,0 +1,63 @@
+body {
+	font-family: 'Lato', sans-serif;
+	color: #747704;
+	font-weight: 300;
+	font-size: 14px;
+}
+.mousetoHand{
+	cursor: pointer;
+}
+.text-muted {
+	color: #BCBB30;
+}
+.text-thin {
+	font-weight: 100;
+}
+.title-super {
+	font-weight: 900;
+}
+.title-logo {
+	margin-top: 40px;
+}
+p.main {
+	text-align: justify;
+}
+.textContainer {
+	vertical-align: middle;
+	display: inline-block;
+}
+/*
+img {
+//	border:1px solid black;
+}
+*/
+.hrpadding {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+/* remove edge gutter*/
+
+.container-fluid.full-width {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+}
+.row.row-no-gutter {
+    margin: 0
+}
+.row.row-no-gutter [class*="col-"] {
+    padding: 0
+}
+.img-full-width {
+    width: 100.5%;
+    height: auto;
+}
+.has-inner .row.row-no-gutter {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.row.row-no-gutter .inner {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
