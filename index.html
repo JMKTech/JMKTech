@@ -7,10 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script src="assets/bootstrap.min.js"></script>
+		<script src="assets/scrollto.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
-		<title>JMK Tech - Empowering the User</title>
 		<link rel="stylesheet" href="assets/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/style.css">
+		<title>JMK Tech - Empowering the User</title>
 		<style type="text/css">
 		.input-group[class*="col-"] {
 		    padding-right: 15px;
@@ -69,22 +70,23 @@
 				<div class="col-lg-5"></div>
 				<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2"><a href="http://jmktech.com"><img src="assets/images/JMK-Logo-navbar.jpg" class="center-block"></a></div>
 				<div class="col-xs-8 col-sm-10 col-md-10 col-lg-5">
-					<nav class="navbar navbar-default navbar-transparent">
+					<nav class="navbar navbar-default navbar-transparent" role="navigation">
 						<div class="container-fluid">
 							<div class="navbar-header">
-     						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+     						<button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+        						<span class="sr-only">Toggle Navigation</span>
         						<span class="icon-bar"></span>
         						<span class="icon-bar"></span>
         						<span class="icon-bar"></span>
       						</button>
       						<a class="navbar-brand" href="#"></a>
     						</div>
-							<div class="collapse navbar-collapse" id="myNavbar">
+							<div id="main-nav" class="collapse navbar-collapse">
 								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#services">Services</a></li>
-									<li><a href="#aboutus">About Us</a></li>
-									<li><a href="#smarthomes">Smart Homes</a></li>
-									<li><a href="#contact">Let's Chat</a></li>
+									<li><a href="#" class="scroll-link" data-id="services">Services</a></li>
+									<li><a href="#" class="scroll-link" data-id="aboutus">About Us</a></li>
+									<li><a href="#" class="scroll-link" data-id="smarthomes">Smart Homes</a></li>
+									<li><a href="#" class="scroll-link" data-id="contactus">Let's Chat</a></li>
 								</ul>
 						</div>
 					</div>
@@ -115,7 +117,8 @@
 			</div>
 			</section>
 			<!--Description Section-->
-			<section id="description">
+			<section>
+			<div id="description">
 				<div class="container" style="max-width: 1000px;">
 					<div class="row">
 						<div class="col-md-12"><h2 class="text-center">Your Technology Partner</h2></div>
@@ -137,10 +140,12 @@
 						</div>
 					</div>
 				</div>
+			</div>
 			</section>
 			<!--Services Description Row-->
-			<section id="service">
-				<div id="service" class="container" style="max-width: 1000px;">
+			<section>
+			<div id="services">
+				<div class="container" style="max-width: 1000px;">
 					<div class="row top-buffer" style="background-color: #ffffff;">
 						<div class="col-md-12"><img src="assets/images/JMK_Logo_section_icon.jpg"><h3><b>Services</b></h3></div>
 					</div>
@@ -175,10 +180,12 @@
 					<div class="col-md-12" style="background-color: #80aeb1; height:2px;"></div>
 				</div>
 				<div>
+			</div>
 			</section>
 
 			<!--About Section-->
-			<section id="aboutus">
+			<section>
+			<div id="aboutus">
 				<div class="container" style="max-width: 1000px;">
 					<div class="row top-buffer" style="background-color: #ffffff;">
 						<div class="col-md-12"><img src="assets/images/JMK_Logo_section_icon.jpg"><h3><b>About Us</b></h3></div>
@@ -212,9 +219,11 @@
 					<div class="col-md-12" style="background-color: #80aeb1; height:2px;"></div>
 				</div>
 				<div>
+			</div>
 			</section>
 			<!--Description Section-->
-			<section id="smarthomes">
+			<section>
+			<div id="smarthomes">
 				<div class="container" style="max-width: 1000px;">
 					<div class="row top-buffer" style="background-color: #ffffff;">
 						<div class="col-md-12"><img src="assets/images/JMK_Logo_section_icon.jpg"><h3><b>Smart Home Technology</b></h3></div>
@@ -272,6 +281,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 			</section>
 		<!--main container closing div-->
 		</div>
