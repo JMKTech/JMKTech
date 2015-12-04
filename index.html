@@ -7,8 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script src="assets/bootstrap.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
 		<title>JMK Tech - Empowering the User</title>
-		<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="assets/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/style.css">
 		<style type="text/css">
@@ -33,6 +33,7 @@
 			vertical-align: baseline;
 			}
 
+			/* JMK logo header */
 			header {
 			    height:100px;
 			    position:fixed;
@@ -40,11 +41,10 @@
 			    left:0;
 			    z-index:100;
 			}
-
+			/* using sections as pages for menu links */
 			section {
 			    background-color: #ffffff;
-			    height:600px;
-			    top:250px;
+			    top:200px;
 			    position:relative;
 			    z-index:200;
 			}
@@ -52,15 +52,50 @@
 	  		header {
 			  font-size: 18pt;
 			}
+
+			@media(max-width: 720px) {
+			.navbar-transparent {
+		        background: #ffffff !important; /*Add your own background*/
+		    }
+			}
 		}
 		</style>
+
 	</head>
 	<body>
-		<div class="container-fluid has-inner">
+		<!--Animated NavBar on Scroll-->
+		<nav id="nav">
+			<div class="row">
+				<div class="col-lg-5"></div>
+				<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2"><a href="http://jmktech.com"><img src="assets/images/JMK-Logo-navbar.jpg" class="center-block"></a></div>
+				<div class="col-xs-8 col-sm-10 col-md-10 col-lg-5">
+					<nav class="navbar navbar-default navbar-transparent">
+						<div class="container-fluid">
+							<div class="navbar-header">
+     						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        						<span class="icon-bar"></span>
+        						<span class="icon-bar"></span>
+        						<span class="icon-bar"></span>
+      						</button>
+      						<a class="navbar-brand" href="#"></a>
+    						</div>
+							<div class="collapse navbar-collapse" id="myNavbar">
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="#services">Services</a></li>
+									<li><a href="#aboutus">About Us</a></li>
+									<li><a href="#smarthomes">Smart Homes</a></li>
+									<li><a href="#contact">Let's Chat</a></li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid">
 			<!--Logo Fixed Header Row-->
 			<div class="row"><header><img src="assets/images/JMK-Logo-main.jpg" class="img-responsive center-block" alt="Logo"></header></div>
-			<section>
 			<!--Color Bar Rows-->
+			<section id="home">
 			<div class="row">
 				<div class="col-md-12" style="background-color: #efc98b; height:50px;"></div>
 			</div>
@@ -78,62 +113,183 @@
 			<div class="row">
 				<div class="col-md-12" style="background-color: #80aeb1; height:50px;"></div>
 			</div>
-			<!--Services Description Row-->
-			<div class="row row-no-gutter" style="background-color: #ffffff;">
-				<div class="col-md-4"><img src="assets/images/handshake.jpg" class="img-responsive img-full-width"></div>
-				<div class="col-md-8">
-					<div class="inner">
-					<h2 class="title-super text-uppercase">Consultations</h2>
-					<h3>Learn How We Can Help</h3>
-					<p class="main">JMK Tech is your partner in today’s techno-centric world. With the enormous variety of technology available to all user levels, JMK Tech stays up-to-date with offerings and features in order to have a full understanding of which forms of technology can help make your life easier. Call us today to set up an appointment to discuss what technology can do for you!</p>
-					</div>
-				</div>
-			</div>
-			<!--Color Bar Rows-->
-			<div class="row">
-				<div class="col-md-12" style="background-color: #efc98b; height:5px;"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-12" style="background-color: #80aeb1; height:5px;"></div>
-			</div>
-			<!--Services Description Row-->
-			<div class="row row-no-gutter" style="background-color: #ffffff;">
-				<div class="col-md-8">
-					<div class="inner">
-					<h2 class="title-super text-uppercase text-right">Support</h2>
-					<h3 class="text-right">When You Need It</h3>
-					<p class="main text-right">JMK Tech has been helping clients take control of their technology. When tech overwhelms you, won’t cooperate, and makes you want to throw it through a window, JMK Tech can help! We will work beside you to regain control of your technology - we will even provide training to increase your understanding of the technology, preventing future issues in the process. You should feel confident using your technology - we just provide a little help when things get out of hand!</p>
-					</div>
-				</div>
-				<div class="col-md-4"><img src="assets/images/help.jpg" class="img-responsive img-full-width"></div>
-			</div>
-			<!--Color Bar Rows-->
-			<div class="row">
-				<div class="col-md-12" style="background-color: #efc98b; height:5px;"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-12" style="background-color: #80aeb1; height:5px;"></div>
-			</div>
-			<!--Services Description Row-->
-			<div class="row row-no-gutter" style="background-color: #ffffff;">
-				<div class="col-md-4"><img src="assets/images/smarthome.jpg" class="img-responsive img-full-width"></div>
-				<div class="col-md-8">
-					<div class="inner">
-					<h2 class="title-super text-uppercase">Smart Homes</h2>
-					<h3>Manage Your Home With Technology</h3>
-					<p class="main">Bring technology into your home to control HVAC, lighting, energy management, security and more, to make your life easier and more affordable. Energy prices are skyrocketing and the drive to become energy-efficient dominates our world. JMK Tech has the solutions to help you understand how technology can help you take control of your home and cut out some of the wasted energy. We have a range of packages, from simple starter management packages, to whole home controls and more. We would love to meet with you to discuss what JMK Tech can do for you!</p>
-					</div>
-				</div>
-			</div>
-			<!--Color Bar Rows-->
-			<div class="row">
-				<div class="col-md-12" style="background-color: #efc98b; height:50px;"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-12" style="background-color: #80aeb1; height:50px;"></div>
-			</div>
 			</section>
+			<!--Description Section-->
+			<section id="description">
+				<div class="container" style="max-width: 1000px;">
+					<div class="row">
+						<div class="col-md-12"><h2 class="text-center">Your Technology Partner</h2></div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<hr>
+							<p><b>JMK Tech is passionate about helping all users take control of technology</b> that dominates their everyday lives: from the computer you use to access the internet, to the cell phone that you carry to stay in touch with important contacts, and everything else. JMK Tech is enthusiastic about making technology useable to all who would like to use it, especially those who are a little too intimidated by all of the options available.</p>
+						<!--color bars-->
+						<div class="row">
+							<div class="col-md-12" style="background-color: #ffffff; height:20px;"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-12" style="background-color: #efc98b; height:2px;"></div>
+							</div>
+						<div class="row">
+							<div class="col-md-12" style="background-color: #80aeb1; height:2px;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Services Description Row-->
+			<section id="service">
+				<div id="service" class="container" style="max-width: 1000px;">
+					<div class="row top-buffer" style="background-color: #ffffff;">
+						<div class="col-md-12"><img src="assets/images/JMK_Logo_section_icon.jpg"><h3><b>Services</b></h3></div>
+					</div>
+					<div class="row top-buffer" style="background-color: #ffffff;">
+						<div class="col-md-4">
+							<h4 class="title-super">Consultations</h4>
+							<hr>
+							<h5>Learn How We Can Help</h5>
+							<p class="main text-right">JMK Tech has been helping clients take control of their technology. When tech overwhelms you, won’t cooperate, and makes you want to throw it through a window, JMK Tech can help! We will work beside you to regain control of your technology - we will even provide training to increase your understanding of the technology, preventing future issues in the process. You should feel confident using your technology - we just provide a little help when things get out of hand!</p>
+						</div>
+						<div class="col-md-4">
+							<h4 class="title-super">Support</h4>
+							<hr>
+							<h5>When You Need It</h5>
+							<p class="main">JMK Tech is your partner in today’s techno-centric world. With the enormous variety of technology available to all user levels, JMK Tech stays up-to-date with offerings and features in order to have a full understanding of which forms of technology can help make your life easier. Call us today to set up an appointment to discuss what technology can do for you!</p>
+						</div>
+						<div class="col-md-4">
+							<h4 class="title-super">Smart Homes</h4>
+							<hr>
+							<h5>Manage Your Home With Technology</h5>
+							<p class="main">Bring technology into your home to control HVAC, lighting, energy management, security and more, to make your life easier and more affordable. Energy prices are skyrocketing and the drive to become energy-efficient dominates our world. JMK Tech has the solutions to help you understand how technology can help you take control of your home and cut out some of the wasted energy. We have a range of packages, from simple starter management packages, to whole home controls and more. We would love to meet with you to discuss what JMK Tech can do for you!</p>
+						</div>
+					</div>
+				<!--color bars-->
+				<div class="row">
+					<div class="col-md-12" style="background-color: #ffffff; height:20px;"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" style="background-color: #efc98b; height:2px;"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" style="background-color: #80aeb1; height:2px;"></div>
+				</div>
+				<div>
+			</section>
+
+			<!--About Section-->
+			<section id="aboutus">
+				<div class="container" style="max-width: 1000px;">
+					<div class="row top-buffer" style="background-color: #ffffff;">
+						<div class="col-md-12"><img src="assets/images/JMK_Logo_section_icon.jpg"><h3><b>About Us</b></h3></div>
+					</div>
+					<div class="row top-buffer" style="background-color: #ffffff;">
+						<div class="col-md-4">
+							<h4 class="title-super">Justin</h4>
+							<h5>CEO</h5>
+							<p class="main text-right">Skills, interests, passions and a quote?</p>
+						</div>
+						<div class="col-md-4">
+							<h4 class="title-super">Shelby</h4>
+							<h5>Title</h5>
+							<p class="main">Skills, interests, passions and a quote?</p>
+						</div>
+						<div class="col-md-4">
+							<h4 class="title-super">Cory</h4>
+							<h5>Elite Tech</h5>
+							<p class="main">BSkills, interests, passions and a quote</p>
+						</div>
+					</div>
+				<div>
+				<!--color bars-->
+				<div class="row">
+					<div class="col-md-12" style="background-color: #ffffff; height:20px;"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" style="background-color: #efc98b; height:2px;"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" style="background-color: #80aeb1; height:2px;"></div>
+				</div>
+				<div>
+			</section>
+			<!--Description Section-->
+			<section id="smarthomes">
+				<div class="container" style="max-width: 1000px;">
+					<div class="row top-buffer" style="background-color: #ffffff;">
+						<div class="col-md-12"><img src="assets/images/JMK_Logo_section_icon.jpg"><h3><b>Smart Home Technology</b></h3></div>
+					</div>
+					<div class="row top-buffer">
+						<div class="col-md-12"><h4>How Can Smart Home Technology Improve Your Life?</h4></div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p>More and more people are turning to smart technology, and JMK Tech is on the cutting edge of these exciting new developments. From the phone and tablet you carry in your pocket to controlling your home’s heating and air conditioning while away on vacation, smart technology is everywhere. If you have been trying to figure out what smart home technology is and how you can take advantage of it, here are 10 simple ways to enjoy the innovation in your home. Whether you are looking to save energy, time, and money or you just want to become more efficient in your home’s day-to-day operations, these ideas may transform your home and lifestyle forever.</p>
+						<dl>
+							<dt>Smart Technology at Home:</dt>
+							<dd>Smart technology is a way of connecting your home through innovative technology to control and give you access to various systems throughout your home, including video, data, telephone, wireless, security, climate, lighting, and other home lifestyle factors that affect you and your family’s daily life. Smart home technology can help your home run more efficiently while also helping family members live in total comfort.</dd>
+							<p>
+							<dt>Innovative Technology in Your Kitchen:</dt>
+							<dd>Your kitchen has always been the hub of cooking, entertaining, spending time with family, and more. You will be surprised how smart technology pairs with your favorite appliances, faucets, and cooktop surfaces – all of these can be controlled through smart technology. Many homes have their smart tablet or keypad built into the wall in the kitchen to have access of other parts of the home. Many homeowners prefer the on-screen directions of their refrigerator to access the internet, play music, or watch their favorite television program – right on the screen of their refrigerator.</dd>
+							<p>
+							<dt>Energy-Saving and Safety-Enhancing Technology for the Kitchen:</dt>
+							<dd>It’s a common misconception that smart technology is only for people who want to have a remote control to everything. However, many smart home technologies actually help keep your family safe while saving you water and energy in the kitchen. Induction cooktops are one of these examples that produce heat that only heats the cookware when the metal comes in contact with the induction cooktop surface. This means a safer kitchen to work in, and less heat being generated for comfort while cooking.</dd>
+							<p>
+							<dt>Smart Home Convenience Everywhere:</dt>
+							<dd>While the kitchen is one room that definitely benefits from smart technology, all homeowners should assess their lifestyle to see what amenities would best fit their home and family. If you’d like to control music, lighting, visual entertainment, or temperature or security systems through your home, you can hire total smart home consultants such as JMK Technology Services who can walk you through the benefits of different configurations and assess what smart home functions will work best for you.</dd>
+							<p>
+							<dt>Smart Bathrooms:</dt>
+							<dd>All homeowners love total comfort and relaxation in their bathrooms. Smart home technology is the perfect way to be able to not only control your bathing experience while lounging in the tub, but you can also control your shower’s temperature, spray, steam, audio, and lighting of your shower, all at the touch of a button. If you share your bathroom, why not program each user’s favorite settings and have your favorite music cued through sound tile speakers? That’s what smart home technology can offer.<dd>
+							<p>
+							<dt>Water Savings:</dt>
+							<dd>While enjoying your bathroom nice, enjoying the savings on your monthly water bill even better. One example of water-saving technology is a Delta Brizo brand faucet, which offer shower heads that sculpt the water into a unique wave pattern, creating the feeling of more water without using more water. Other faucets can turn on and off automatically by motion, and the temperature of the water can be seen by a color LED light indicator before putting your hands under the water. These smart technologies ensure a better and safer user experience and less water wasted, all at once.</dd>
+							<p>
+							<dt>Cooling and Heating Your Home With Smart Technology:</dt>
+							<dd>Your home can use a lot of energy for cooling and heating to keep your family comfortable in all seasons and climates. In order to do this without costing a fortune for fluctuations of outdoor air temperatures, your home can have smart technology that helps you control and monitor your energy usage with thermostats such as the Nest learning thermostat. It “learns” your family’s lifestyle and connects to Wi-Fi, which enables homeowners to control settings from any internet enabled smart device.</dd>
+							<p>
+							<dt>Temperature Control Through Architecture and Design:</dt>
+							<dd>Other creative ideas for helping homeowners with heating and cooling doesn’t involve innovative electronics but rather placement of windows and doors and the position of your home, which can help take advantage of nature’s seasons and temperature changes. A passive house is designed to maximize its ability to heat itself in winter and cool itself in summer. This is designed by careful consideration of a home’s site and how the sun moves across the sky, where the trees and other vegetation are located, where the winter winds come from, etc.</dd>
+							<p>
+							<dt>Smart Innovations for the Future:</dt>
+							<dd>Many smart home ideas are out in the commercial world but haven’t been adapted for residential use yet; however, the reality isn’t far into the future. Coffee tables that enable you to control your home, surf the internet, and entertain your guests are already being used in hotels, casinos, and hospitality industries. Samsung has the SUR40 Microsoft PixelSense that isn’t available to consumers yet but enables guests to watch television, control smart appliances, and more. The possibilities are enormous for how many different areas of your home smart technology will be able to touch in upcoming years.</dd>
+							<p>
+							<dt>Total Home Automation:</dt>
+							<dd>While smart technologies are used for saving energy, water and adding safety, there is another factor that homeowners love: automation. Similar to the science fiction movies that we all fell in love with years ago, today many of those futuristic amenities have come to life. From automating your interior shades and exterior awnings from your bedroom to controlling your pool temperature, lighting and music before your guests arrive, the possibilities are mind-blowing. In this new era, smart home technology is fast and ever-changing. Contact JMK Technology Services today to find out how we can implement smart home technology to improve your life!</dd>
+						</dl>
+
+
+
+						<!--color bars-->
+						<div class="row">
+							<div class="col-md-12" style="background-color: #ffffff; height:20px;"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-12" style="background-color: #efc98b; height:2px;"></div>
+							</div>
+						<div class="row">
+							<div class="col-md-12" style="background-color: #80aeb1; height:2px;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		<!--main container closing div-->
 		</div>
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<!--Animated Navbar Script-->
+		<script type="text/javascript">
+		(function($) {
+		    $(document).ready(function(){
+		        $(window).scroll(function(){
+		            if ($(this).scrollTop() > 200) { /* distance of scrolling from top */
+		                $('#nav').fadeIn(500); /* fade in speed rate */
+		            } else {
+		                $('#nav').fadeOut(300); /* fade out speed rate */
+		            }
+		        });
+		    });
+		})(jQuery);
+		</script>
 	</body>
 </html>

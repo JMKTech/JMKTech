@@ -1,14 +1,44 @@
 body {
-	font-family: 'Lato', sans-serif;
-	color: #747704;
+	font-family: 'Roboto Slab', serif;
+	color: gray;
 	font-weight: 300;
 	font-size: 14px;
+	margin: 0;
 }
+/* sticky navigation bar that's hidden until scrolling */
+#nav {
+	height:55px;
+	width: 100%;
+	position:fixed;
+	padding-top: 2px;
+	top:0;
+	left:0;
+	background-color:#ffffff;
+	z-index:9999;
+	display: none;
+/* drop shadow on navbar */
+	-webkit-box-shadow: 0 10px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 10px 6px -6px #999;
+}
+/* start - making the menu on navbar transparent */
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+.navbar li { color: #000
+}
+/* end - making the navbar transparent */
 .mousetoHand{
 	cursor: pointer;
 }
 .text-muted {
 	color: #BCBB30;
+}
+b {
+	font-style: bold;
+	color: #005d64;
 }
 .text-thin {
 	font-weight: 100;
@@ -28,14 +58,14 @@ p.main {
 }
 /*
 img {
-//	border:1px solid black;
+border:1px solid black;
 }
 */
 .hrpadding {
 	margin-top: 1px;
 	margin-bottom: 1px;
 }
-/* remove edge gutter*/
+/* start - removing edge gutter */
 
 .container-fluid.full-width {
     padding-left: 0;
@@ -60,4 +90,11 @@ img {
     padding-left: 10px;
     padding-right: 10px;
 }
+/* end - removing edge gutter */
 
+.top-buffer {
+	margin-top:50px;
+}
+h3 {
+	display: inline;
+}
