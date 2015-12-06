@@ -56,17 +56,12 @@ p.main {
 	vertical-align: middle;
 	display: inline-block;
 }
-/*
-img {
-border:1px solid black;
-}
-*/
 .hrpadding {
 	margin-top: 1px;
 	margin-bottom: 1px;
 }
-/* start - removing edge gutter */
 
+/* start - removing edge gutter */
 .container-fluid.full-width {
     padding-left: 0;
     padding-right: 0;

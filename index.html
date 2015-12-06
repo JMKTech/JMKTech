@@ -13,11 +13,11 @@
 		<link rel="stylesheet" href="assets/style.css">
 		<title>JMK Tech - Empowering the User</title>
 		<style type="text/css">
+
 		.input-group[class*="col-"] {
 		    padding-right: 15px;
 		    padding-left: 15px;
 		    }
-
 		    .popover   {
 			background-color: #e74c3c;
 			color: #ecf0f1;
@@ -42,10 +42,10 @@
 			    left:0;
 			    z-index:100;
 			}
-			/* using sections as pages for menu links */
+			/* Using a <section> with a white background color to cover up main logo on scroll */
 			section {
 			    background-color: #ffffff;
-			    top:200px;
+			    top:210px;
 			    position:relative;
 			    z-index:200;
 			}
@@ -53,7 +53,7 @@
 	  		header {
 			  font-size: 18pt;
 			}
-
+			/* transparent navbar */
 			@media(max-width: 720px) {
 			.navbar-transparent {
 		        background: #ffffff !important; /*Add your own background*/
@@ -83,10 +83,10 @@
     						</div>
 							<div id="main-nav" class="collapse navbar-collapse">
 								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#" class="scroll-link" data-id="services">Services</a></li>
-									<li><a href="#" class="scroll-link" data-id="aboutus">About Us</a></li>
-									<li><a href="#" class="scroll-link" data-id="smarthomes">Smart Homes</a></li>
-									<li><a href="#" class="scroll-link" data-id="contactus">Let's Chat</a></li>
+									<li><a href="#" class="scroll-link" data-id="services"><strong>Services</strong></a></li>
+									<li><a href="#" class="scroll-link" data-id="aboutus"><strong>About Us</strong></a></li>
+									<li><a href="#" class="scroll-link" data-id="smarthomes"><strong>Smart Homes</strong></a></li>
+									<li><a href="#" class="scroll-link" data-id="contactus"><strong>Let's Chat</strong></a></li>
 								</ul>
 						</div>
 					</div>
@@ -97,14 +97,14 @@
 			<!--Logo Fixed Header Row-->
 			<div class="row"><header><img src="assets/images/JMK-Logo-main.jpg" class="img-responsive center-block" alt="Logo"></header></div>
 			<!--Color Bar Rows-->
-			<section id="home">
+			<section>
 			<div class="row">
 				<div class="col-md-12" style="background-color: #efc98b; height:50px;"></div>
 			</div>
 			<div class="row">
 				<div class="col-md-12" style="background-color: #80aeb1; height:50px;"></div>
 			</div>
-			<!--Main Photo Row-->
+			<!--Cover Photo Row-->
 			<div class="row"><img src="assets/images/prcdIMG_9795desat.jpg" class="img-responsive center-block" alt="Logo">
 				<div class="col-md-"></div>
 			</div>
@@ -273,9 +273,6 @@
 							<dt>Total Home Automation:</dt>
 							<dd>While smart technologies are used for saving energy, water and adding safety, there is another factor that homeowners love: automation. Similar to the science fiction movies that we all fell in love with years ago, today many of those futuristic amenities have come to life. From automating your interior shades and exterior awnings from your bedroom to controlling your pool temperature, lighting and music before your guests arrive, the possibilities are mind-blowing. In this new era, smart home technology is fast and ever-changing. Contact JMK Technology Services today to find out how we can implement smart home technology to improve your life!</dd>
 						</dl>
-
-
-
 						<!--color bars-->
 						<div class="row">
 							<div class="col-md-12" style="background-color: #ffffff; height:20px;"></div>
@@ -328,8 +325,8 @@
 		</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-		<!--Animated Navbar Script-->
-		<script type="text/javascript">
+	<!--Animated Navbar Script-->
+	<script type="text/javascript">
 		(function($) {
 		    $(document).ready(function(){
 		        $(window).scroll(function(){
@@ -341,6 +338,6 @@
 		        });
 		    });
 		})(jQuery);
-		</script>
+	</script>
 	</body>
 </html>
