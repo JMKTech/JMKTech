@@ -17,48 +17,53 @@
 		.input-group[class*="col-"] {
 		    padding-right: 15px;
 		    padding-left: 15px;
-		    }
-		    .popover   {
+		}
+
+	    .popover   {
 			background-color: #e74c3c;
 			color: #ecf0f1;
 			width: 120px;
-			}
-			.popover.right .arrow:after {
+		}
+		.popover.right .arrow:after {
 			border-right-color: #e74c3c;
-			}
-			* {
+		}
+
+		* {
 			margin: 0;
 			padding: 0;
 			border: 0;
 			font-size: 100%;
 			vertical-align: baseline;
-			}
+		}
 
-			/* JMK logo header */
-			header {
-			    height:100px;
-			    position:fixed;
-			    right:0;
-			    left:0;
-			    z-index:100;
-			}
-			/* Using a <section> with a white background color to cover up main logo on scroll */
-			section {
-			    background-color: #ffffff;
-			    top:210px;
-			    position:relative;
-			    z-index:200;
-			}
- 			@media(max-width: 720px) {
-	  		header {
-			  font-size: 18pt;
-			}
-			/* transparent navbar */
-			@media(max-width: 720px) {
-			.navbar-transparent {
-		        background: #ffffff !important; /*Add your own background*/
-		    }
-			}
+		/* JMK logo header */
+		header {
+		    height:100px;
+		    position:fixed;
+		    right:0;
+		    left:0;
+		    z-index:100;
+		}
+
+		/* Using a <section> with a white background color to cover up main logo on scroll */
+		section {
+		    background-color: #ffffff;
+		    top:210px;
+		    position:relative;
+		    z-index:200;
+		}
+
+		@media(max-width: 770px) {
+  		header {
+		  font-size: 18pt;
+		}
+
+		/* transparent mini navbar converts to solid bg on media querie */
+		@media(max-width: 1200px) {
+		.navbar-transparent {
+	        background: #ffffff !important; /*Add your own background*/
+	    }
+		}
 		}
 		</style>
 
