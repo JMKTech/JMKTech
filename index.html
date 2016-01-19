@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+        <!-- MAIN TITLE, UNICODE AND VIEWPORT SETTINGS -->
+		<title>JMK Tech - Empowering the User</title>
 		<meta charset="utf-8">
 		<meta name="description" content="JMK Tech - Empowering the User">
 		<meta name="keywords" content="JMK Tech, technology, technologies, support, IT, IS,">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+		<!-- FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+		<!-- CSS FILES -->
+		<link rel="stylesheet" href="assets/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/style.css">
+		<link rel="stylesheet" href="assets/animate.min.css">
+		<!-- JAVASCRIPT FILES -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script src="assets/bootstrap.min.js"></script>
 		<script src="assets/scrollto.js"></script>
-		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="assets/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/style.css">
-		<title>JMK Tech - Empowering the User</title>
+		<script src="assets/wow.min.js"></script>
+		<script>
+        	new WOW().init();
+        </script>
 		<!-- Start of jmktech Zendesk Widget script -->
-<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","jmktech.zendesk.com");
-/*]]>*/</script>
-<!-- End of jmktech Zendesk Widget script -->
+		<script>
+		/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","jmktech.zendesk.com");/*]]>*/
+		</script>
+		<!-- End of jmktech Zendesk Widget script -->
+		<!-- EXTRA CSS STYLES -->
 		<style type="text/css">
-
 		.input-group[class*="col-"] {
 		    padding-right: 15px;
 		    padding-left: 15px;
 		}
-
 	    .popover   {
 			background-color: #e74c3c;
 			color: #ecf0f1;
@@ -31,7 +41,6 @@
 		.popover.right .arrow:after {
 			border-right-color: #e74c3c;
 		}
-
 		* {
 			margin: 0;
 			padding: 0;
@@ -39,7 +48,6 @@
 			font-size: 100%;
 			vertical-align: baseline;
 		}
-
 		/* JMK logo header */
 		header {
 		    height:100px;
@@ -48,7 +56,6 @@
 		    left:0;
 		    z-index:100;
 		}
-
 		/* Using a <section> with a white background color to cover up main logo on scroll */
 		section {
 		    background-color: #ffffff;
@@ -56,12 +63,10 @@
 		    position:relative;
 		    z-index:200;
 		}
-
 		@media(max-width: 770px) {
   		header {
 		  font-size: 18pt;
 		}
-
 		/* transparent mini navbar converts to solid bg on media querie */
 		@media(max-width: 1200px) {
 		.navbar-transparent {
@@ -70,14 +75,13 @@
 		}
 		}
 		</style>
-
 	</head>
 	<body>
 		<!--Animated NavBar on Scroll-->
 		<nav id="nav">
 			<div class="row">
 				<div class="col-lg-5"></div>
-				<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2"><a href="#" class="scroll-top"><img src="assets/images/JMK-Logo-navbar.jpg" class="center-block" alt="JMK Tech Logo"></a></div>
+				<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 animated flipInX" style="visibility: visible; animation-delay:0.6s; animation-name: flipInX;"><a href="#" class="scroll-top"><img src="assets/images/JMK-Logo-navbar.jpg" class="center-block" alt="JMK Tech Logo"></a></div>
 				<div class="col-xs-8 col-sm-10 col-md-10 col-lg-5">
 					<nav class="navbar navbar-default navbar-transparent">
 						<div class="container-fluid">
@@ -92,10 +96,10 @@
     						</div>
 							<div id="main-nav" class="collapse navbar-collapse">
 								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#" class="scroll-link" data-id="services"><strong>Services</strong></a></li>
-									<li><a href="#" class="scroll-link" data-id="aboutus"><strong>About Us</strong></a></li>
-									<li><a href="#" class="scroll-link" data-id="smarthomes"><strong>Smart Homes</strong></a></li>
-									<li><a href="#" class="scroll-link" data-id="contactus"><strong>Let's Chat</strong></a></li>
+									<li><a href="#" class="scroll-link wow fadeIn" data-wow-delay="0.1s" data-id="services"><strong>Services</strong></a></li>
+									<li><a href="#" class="scroll-link wow fadeIn" data-wow-delay="0.2s" data-id="aboutus"><strong>About Us</strong></a></li>
+									<li><a href="#" class="scroll-link wow fadeIn" data-wow-delay="0.3s" data-id="smarthomes"><strong>Smart Homes</strong></a></li>
+									<li><a href="#" class="scroll-link wow fadeIn" data-wow-delay="0.4s" data-id="contactus"><strong>Let's Chat</strong></a></li>
 								</ul>
 							</div>
 						</div>
@@ -105,7 +109,7 @@
 		</nav>
 		<div class="container-fluid">
 			<!--Logo Fixed Header Row-->
-			<div class="row"><header><img src="assets/images/JMK-Logo-main.jpg" class="img-responsive center-block" alt="Logo"></header></div>
+			<div class="row animated fadeIn"><header><img src="assets/images/JMK-Logo-main.jpg" class="img-responsive center-block" alt="Logo"></header></div>
 			<!--Color Bar Rows-->
 			<section>
 				<div class="row">
@@ -115,7 +119,7 @@
 					<div class="col-md-12" style="background-color: #80aeb1; height:50px;"></div>
 				</div>
 				<!--Cover Photo Row-->
-				<div class="row"><img src="assets/images/mainSnow.jpg" class="img-responsive center-block" alt="Logo">
+				<div class="row animated fadeIn"><img src="assets/images/mainSnow.jpg" class="img-responsive center-block" alt="Logo">
 					<div class="col-md-"></div>
 				</div>
 				<!--Color Bar Rows-->
@@ -131,10 +135,10 @@
 				<div id="description">
 					<div class="container" style="max-width: 1000px;">
 						<div class="row">
-							<div class="col-md-12"><h2 class="text-center">Your Technology Partner</h2></div>
+							<div class="col-md-12 wow fadeIn"><h2 class="text-center">Your Technology Partner</h2></div>
 						</div>
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-12 wow fadeIn">
 								<hr>
 								<p><b>JMK Tech is passionate about helping all users take control of technology</b> that dominates their everyday lives: from the computer you use to access the internet, to the cell phone that you carry to stay in touch with important contacts, and everything else. JMK Tech is enthusiastic about making technology useable to all who would like to use it, especially those who are a little too intimidated by all of the options available.</p>
 							<!--color bars-->
@@ -157,24 +161,24 @@
 				<div id="services">
 					<div class="container" style="max-width: 1000px;">
 						<div class="row top-buffer" style="background-color: #ffffff;">
-							<div class="col-md-12"><img src="assets/images/JMK_Logo_section_icon.jpg" alt="JMK Logo Section Logo"><h3><b>Services</b></h3></div>
+							<div class="col-md-12 wow fadeIn" data-wow-duration="2s" style="visibility: visible; animation-name: fadeIn;"><img src="assets/images/JMK_Logo_section_icon.jpg" alt="JMK Logo Section Logo"><h3><b>Services</b></h3></div>
 						</div>
 						<div class="row row-table top-buffer" style="background-color: #ffffff;">
-							<div class="col-md-4">
+							<div class="col-md-4 wow fadeIn" data-wow-delay="0.4s">
 								<h4 class="title-super">Consultations</h4>
 								<hr>
 								<h5>Learn How We Can Help</h5>
 								<p class="main text-right">JMK Tech has been helping clients take control of their technology. When tech overwhelms you, won’t cooperate, and makes you want to throw it through a window, JMK Tech can help! We will work beside you to regain control of your technology - we will even provide training to increase your understanding of the technology, preventing future issues in the process. You should feel confident using your technology - we just provide a little help when things get out of hand!</p>
 								<p class="img"><img src="assets/images/handshake_2desat.jpg" class="img-responsive" alt="Handshaking Photo"></P>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
 								<h4 class="title-super">Support</h4>
 								<hr>
 								<h5>When You Need It</h5>
 								<p class="main">JMK Tech is your partner in today’s techno-centric world. With the enormous variety of technology available to all user levels, JMK Tech stays up-to-date with offerings and features in order to have a full understanding of which forms of technology can help make your life easier. Call us today to set up an appointment to discuss what technology can do for you!</p>
 								<p class="img"><img src="assets/images/help_2desat.jpg" class="img-responsive" alt="Help Button Logo"></p>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 wow fadeIn" data-wow-delay="0.8s">
 								<h4 class="title-super">Smart Homes</h4>
 								<hr>
 								<h5>Manage Your Home With Technology</h5>
@@ -202,47 +206,41 @@
 				<div id="aboutus">
 					<div class="container" style="max-width: 1000px;">
 						<div class="row top-buffer" style="background-color: #ffffff;">
-							<div class="col-md-12"><img src="assets/images/JMK_Logo_section_icon.jpg" alt="JMK Logo Section Logo"><h3><b>About Us</b></h3></div>
+							<div class="col-md-12 wow fadeIn"><img src="assets/images/JMK_Logo_section_icon.jpg" alt="JMK Logo Section Logo"><h3><b>About Us</b></h3></div>
 						</div>
 						<div class="row top-buffer" style="background-color: #ffffff;">
-							<div class="col-md-4">
+							<div class="col-md-4 wow fadeIn" data-wow-delay="0.4s">
 								<h4 class="title-super text-center">Justin</h4>
 								<h5 class="text-center">CEO</h5>
 								<p><img src="assets/images/staff-justin.jpg" class="img-responsive center-block img-circle" alt="Justin's Photo"></p>
-								<p class="main text-right">Skills, interests, passions, stuff and things and stuff and things and stuff and things and stuff and things. But more stuff and things and stuff and things and stuff and things.</p>
+								<p class="main text-right">Justin is the founder and CEO of JMK Tech. His drive for customer service and excellence in the tech space ensures his team is providing the best possible experience for our clients. He is passionate about helping others in any situation (he would have been an EMT but chose tech instead). He loves business and giving entrepreneurs the tools they need to be successful. Blue is his favorite color, as it reminds him of sunny days!</p>
 								<p>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
 								<h4 class="title-super text-center">Cory</h4>
-								<h5 class="text-center">Elite Tech</h5>
+								<h5 class="text-center">Technical Accounts Manager</h5>
 								<p><img src="assets/images/staff-cory.jpg" class="img-responsive center-block img-circle" alt="Cory's Photo"></p>
 								<p class="main">Cory takes care of and monitors JMK Tech’s client’s networks, servers, computers, and other devices.  He has been working in the IT field for almost as long as he can remember. He enjoys fishing and watching baseball. He believes bananas are not edible and any water that you cannot see the bottom in must have some sort of man eating creature lurking below.</p>
 								<p>
 							</div>
-							<div class="col-md-4">
-								<h4 class="title-super text-center">Shelby</h4>
-								<h5 class="text-center">Administrative Assistant</h5>
-								<p><img src="assets/images/staff-shelby.jpg" class="img-responsive center-block img-circle" alt="Shelby's Photo"></p>
-								<p class="main">Skills, interests, passions, stuff and things and stuff and things and stuff and things and stuff and things.</p>
-							</div>
 						</div>
 						<div class="row" style="background-color: #ffffff;">
-							<div class="col-md-4">
-								<h4 class="title-super text-center">Jason</h4>
-								<h5 class="text-center">Tech Intern</h5>
-								<p><img src="http://placehold.it/150x150" class="img-responsive center-block img-circle" alt="Jason's Photo"></p>
-								<p class="main text-right">Skills, interests, passions, stuff and things and stuff and things and stuff and things and stuff and things. But more stuff and things and stuff and things and stuff and things.</p>
-								<p>
-							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 wow fadeIn" data-wow-delay="0.4s">
 								<h4 class="title-super text-center">Kelly</h4>
-								<h5 class="text-center">Tech</h5>
+								<h5 class="text-center">Technician Tier 2</h5>
 								<p><img src="assets/images/staff-kelly.jpg" class="img-responsive center-block img-circle" alt="Kelly's Photo"></p>
 								<p class="main">Kelly helps assist JMK Tech's clients with their various technology needs. Over 15 years, he's brought well rounded experience from small local businesses but also enterprise level experience from places such as AT&T Wireless and Weyerhaeuser. He's also afraid of heights and deep dark crevasses but likes mountaineering. He believes a law should be passed to make coffee drinking mandatory.</p>
 								<p>
 							</div>
-								<div class="col-md-4">
-								<h4 class="title-super text-center">New Person</h4>
+							<div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
+								<h4 class="title-super text-center">Jason</h4>
+								<h5 class="text-center">Technician Intern</h5>
+								<p><img src="http://placehold.it/150x150" class="img-responsive center-block img-circle" alt="Jason's Photo"></p>
+								<p class="main text-right">Skills, interests, passions, stuff and things and stuff and things and stuff and things and stuff and things. But more stuff and things and stuff and things and stuff and things.</p>
+								<p>
+							</div>
+								<div class="col-md-4 wow fadeIn" data-wow-delay="0.8s">
+								<h4 class="title-super text-center">Delaney</h4>
 								<h5 class="text-center">Admin Assistant Intern</h5>
 								<p><img src="http://placehold.it/150x150" class="img-responsive center-block img-circle" alt="New Person's Photo"></p>
 								<p class="main text-right">Skills, interests, passions, stuff and things and stuff and things and stuff and things and stuff and things. But more stuff and things and stuff and things and stuff and things.</p>
@@ -269,13 +267,13 @@
 				<div id="smarthomes">
 					<div class="container" style="max-width: 1000px;">
 						<div class="row top-buffer" style="background-color: #ffffff;">
-							<div class="col-md-12"><img src="assets/images/JMK_Logo_section_icon.jpg" alt="JMK Logo Section Logo"><h3><b>Smart Home Technology</b></h3></div>
+							<div class="col-md-12 wow fadeIn"><img src="assets/images/JMK_Logo_section_icon.jpg" alt="JMK Logo Section Logo"><h3><b>Smart Home Technology</b></h3></div>
 						</div>
 						<div class="row top-buffer">
 							<div class="col-md-12"><h4>How Can <b>Smart Home Technology</b> Improve Your Life?</h4></div>
 						</div>
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-12 wow fadeIn">
 								More and more people are turning to smart technology, and JMK Tech is on the cutting edge of these exciting new developments. From the phone and tablet you carry in your pocket to controlling your home’s heating and air conditioning while away on vacation, smart technology is everywhere. If you have been trying to figure out what smart home technology is and how you can take advantage of it, here are 10 simple ways to enjoy the innovation in your home. Whether you are looking to save energy, time, and money or you just want to become more efficient in your home’s day-to-day operations, these ideas may transform your home and lifestyle forever.
 								<p>
 								<dl>
@@ -329,12 +327,12 @@
 			<div id="contactus">
 				<div class="container" style="max-width: 1000px;">
 					<div class="row">
-						<div class="col-md-12"><h2 class="text-center">Want us to work for you? Let's Chat</h2></div>
+						<div class="col-md-12 wow fadeIn"><h2 class="text-center">Want us to work for you? Let's Chat</h2></div>
 					</div>
 					<div class="row">
-						<div class="col-md-12 text-center">
+						<div class="col-md-12 text-center wow fadeIn">
 							<hr>
-							<h3>509-987-5526</h3>
+							<h3>509-392-8115</h3>
 							<p>
 							<h3><a href="https://www.facebook.com/jmktechsvcs" target="bobdole">Facebook.com/jmktechsvcs</a></h3>
 							<p>
