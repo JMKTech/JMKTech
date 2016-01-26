@@ -16,7 +16,8 @@ $(document).ready(function() {
         $('#main-nav').toggleClass("open");
     });
 });
-// scroll function
+
+// Navbar menu auto-scroll-to-section function
 function scrollToID(id, speed){
     var offSet = 50;
     var targetOffset = $(id).offset().top - offSet;
@@ -32,3 +33,18 @@ if (typeof console === "undefined") {
         log: function() { }
     };
 }
+
+// Animated navbar
+(function($) {
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 200) { /* distance of scrolling from top */
+                $('#nav').fadeIn(500); /* fade in speed rate */
+            } else {
+                $('#nav').fadeOut(300); /* fade out speed rate */
+            }
+        });
+    });
+})(jQuery);
+
+
