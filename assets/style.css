@@ -32,7 +32,7 @@ body {
 
 /* JMK logo header */
 header {
-  height:100px;
+  height: 100px;
   position:fixed;
   right:0;
   left:0;
@@ -127,6 +127,14 @@ h3 {
 p.button {
   text-align: center;
 }
+.colorBarRowOrg {
+  background-color: #efc98b;
+  height: 50px;
+}
+.colorBarRowGrn {
+  background-color: #80aeb1;
+  height: 50px;
+}
 
 /* BACK TO TOP BUTTON */
 .btn-scrollTop {
@@ -179,10 +187,18 @@ section {
 header {
   font-size: 18pt;
 }
+.colorBarRowOrg {
+  background-color: #efc98b;
+  height: 20px;
+}
+.colorBarRowGrn {
+  background-color: #80aeb1;
+  height: 20px;
+}
+
 /* transparent mini navbar converts to solid bg on media querie */
 @media(max-width: 1200px) {
 .navbar-transparent {
     background: #ffffff !important; /*Add your own background*/
-}
 }
 }
