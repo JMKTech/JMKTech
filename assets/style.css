@@ -179,7 +179,7 @@ p.img {
 /* Using a <section> with a white background color to cover up main logo on scroll */
 section {
   background-color: #ffffff;
-  top:210px;
+  top:115px;
   position:relative;
   z-index:200;
 }
