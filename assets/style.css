@@ -52,6 +52,10 @@ header {
   padding-right: 15px;
   padding-left: 15px;
 }
+img.mainPhoto {
+  opacity: 0.7;
+  filter: alpha(opacity=40);
+}
 .popover   {
   background-color: #e74c3c;
   color: #ecf0f1;
@@ -194,6 +198,10 @@ header {
 .colorBarRowGrn {
   background-color: #80aeb1;
   height: 20px;
+}
+section {
+  background-color: #ffffff;
+  top:85px;
 }
 
 /* transparent mini navbar converts to solid bg on media querie */
