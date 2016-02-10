@@ -34,14 +34,14 @@ if (typeof console === "undefined") {
     };
 }
 
-// Animated navbar
+// Navbar appear on scrolling
 (function($) {
     $(document).ready(function(){
         $(window).scroll(function(){
-            if ($(this).scrollTop() > 200) { /* distance of scrolling from top */
-                $('#nav').fadeIn(500); /* fade in speed rate */
+            if ($(this).scrollTop() > 100) { /* distance of scrolling from top */
+                $('#nav').slideDown(500); /* fade in speed rate */
             } else {
-                $('#nav').fadeOut(300); /* fade out speed rate */
+                $('#nav').slideUp(300); /* fade out speed rate */
             }
         });
     });
@@ -50,7 +50,7 @@ if (typeof console === "undefined") {
 // Background Scrolling Parallex
 $(document).ready(function(){
 
-var top_header = $('.header-container');
+var top_header = $('.frontPage');
 top_header.css({'background-position':'center center'}); // better use CSS
 
 $(window).scroll(function () {
