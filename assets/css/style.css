@@ -63,6 +63,9 @@ body {
 img.mainPhoto {
   max-width: 500px;
 }
+.center {
+  text-align: center;
+}
 .companySlogan {
   display:block;
   color: white;
@@ -159,7 +162,7 @@ p.button {
   height: 50px;
 }
 
-/* BACK TO TOP BUTTON */
+/* BACK TO TOP BUTTON
 .btn-scrollTop {
   position: fixed;
   bottom: 5em;
@@ -174,6 +177,71 @@ p.button {
 .btn:hover {
   background-color: rgba(135, 135, 135);
 }
+*/
+
+/* Solid Orange Schedule button */
+.btn-contact {
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  background-color:#de9316;
+  font-size: 14px;
+  padding: 1em;
+}
+
+.btn:hover {
+  color: #005d64;
+}
+
+  /* Button Styling */
+  .btn {
+    bottom: 150px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn {
+    padding: 10px 10px;
+    font-size: 14px;
+    line-height: 1.33333;
+    border-radius: 3px; }
+
+  .btn.outline {
+    background: none; }
+
+  .btn-primary {
+    background-color: transparent; }
+
+  .btn-primary.outline {
+    border: 1px solid white;
+    color: white; }
+
+  .btn-primary.outline-schedule {
+    border: 1px solid #de9316;
+    color: #de9316; }
+
+  .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #de9316;
+    border-color: #de9316; }
+
+  .btn-primary.outline-schedule:hover, .btn-primary.outline-signup:focus, .btn-primary.outline-signup:active, .btn-primary.outline-signup.active, .open > .dropdown-toggle.btn-primary {
+    color: #005d64;
+    border-color: #005d64;
+    background-color: transparent; }
+
+  .btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #005d64;
+    color: #005d64;
+    background-color: transparent;
+    box-shadow: none; }
+
+  .btn-primary.outline-schedule:active, .btn-primary.outline-schedule.active {
+    border-color: black;
+    color: black;
+    background-color: white;
+    box-shadow: none; }
+
+    /*End Button Styling */
+
 .socialMedia {
   font-size: 50px;
   margin: 0 8px 8px 0 !important;
@@ -198,25 +266,32 @@ img.mainPhoto {
 /* minimum width media querie for columns */
 @media only screen and (min-width : 768px) {
 /* spacing for 3 column set on Services and About sections */
-.row.row-table {
-  display: table;
-}
-[class*="col-md-4"] {
-  float: none;
-  width: 33%;
-  display: table-cell;
-  vertical-align: top;
-  position: relative;
-  padding-bottom: 125px;
-}
-/* places the services photos underneath text */
-p.img {
-  position: absolute;
-  bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-}
+  .row.row-table {
+    display: table;
+  }
+  [class*="col-md-4"] {
+    float: none;
+    width: 33%;
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+    padding-bottom: 130px;
+  }
+  .bottom-svcs {
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* places the services photos underneath text */
+
+  p.img {
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid gray;
+  }
+
 }
 
 @media(max-width: 768px) {
@@ -233,7 +308,7 @@ header {
 }
 .frontPage {
   display: block;
-  background: url(../assets/images/mainSouthridgeTwilight.jpg) center center no-repeat;
+  background: url(../images/mainSouthridgeTwilight.jpg) center center no-repeat;
   background-size: cover;
   min-height:15em;
 }
